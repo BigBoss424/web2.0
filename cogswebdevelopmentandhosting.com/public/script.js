@@ -5,7 +5,7 @@
       hour = min * 60,
       day = hour * 24;
   
-    const end = new Date("Aug 31, 2022 00:00:00").getTime();
+    const end = new Date("Sept 30, 2022 00:00:00").getTime();
   
     const int = setInterval(() => {
       const current = new Date().getTime();
