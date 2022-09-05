@@ -12,20 +12,13 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
-  "hosting": [
-    {
-      "target": "blog",
-      "public": 
-    }
-    {
+  "hosting": {
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
-    }
-  ]
   },
   "storage": {
     "rules": "storage.rules"
@@ -57,6 +50,6 @@
     }
   },
   "remoteconfig": {
-    "template": "remoteconfig.template.json"
+    "template": " "
   }
 }

@@ -9,7 +9,6 @@ module.exports = {
     "google",
   ],
   rules: {
-    "no-unused-vars": "warn",
-    "quotes": ["error", "double"],
+    quotes: ["error", "double"],
   },
 };

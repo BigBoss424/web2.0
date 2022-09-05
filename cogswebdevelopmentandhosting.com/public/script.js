@@ -16,7 +16,7 @@
       document.getElementById("seconds").innerText = Math.floor( (remaining % min) / sec );
       if (remaining < 0) {
         document.querySelector("h1").innerText = "We Have Arrived!";
-        document.querySelector("p").innerHTML = "The big day is finally here - view our <a href=https://www.website.com>website<a/> for more information.";
+        document.querySelector("p").innerHTML = "The big day is finally here - view our <a href=https://www.cogswebdevelopmentandhosting.com/>website<a/> for more information.";
         const digit = document.querySelectorAll("span");
         digit.forEach((digit) => {
           digit.innerText = "0";
