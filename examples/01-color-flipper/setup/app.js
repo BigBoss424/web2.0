@@ -14,5 +14,5 @@ btn.addEventListener("click", function(){
 });
 
 function getRandomNumber(){
-    return Math.random();
+    return Math.floor(Math.random() * colors.length);
 }
