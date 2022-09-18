@@ -51,4 +51,5 @@ window.addEventListener('keydown', e => {
 })
 
 // Main
-draw(); window.requestAnimationFrame(step(0))
+draw()
+window.requestAnimationFrame(step(0))
