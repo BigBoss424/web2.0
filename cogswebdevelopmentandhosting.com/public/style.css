@@ -45,4 +45,22 @@ html {
     display: block;
     font-size: 3rem;
   }
+  #buttons{
+    display: flex;
+    gap: 45%;
+  }
+
+  #devblog{
+    display: block;
+    font-size: 2rem;
+    background: #031E45;
+    border-radius: 10px;
+  }
+
+  #contact{
+    display:block;
+    font-size: 2rem;
+    background: #031E45;
+    border-radius: 10px;
+  }
   
