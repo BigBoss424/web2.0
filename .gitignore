@@ -1,0 +1,16 @@
+#ignore ALL firebase directories
+cogswebdevelopmentandhosting.com/.firebase
+
+#ignore firebase backup directory
+cogswebdevelopmentandhosting.com/v1/development/firebase_backup
+
+#ignore firebase .json files
+firebase.json
+firestore.indexes.json
+
+#ignore firebase .rules files
+firestore.rules
+
+#ignore firebaserc
+.firebaserc 
+
