@@ -47,9 +47,15 @@ html {
   }
   #buttons{
     display: flex;
-    gap: 45%;
+    gap: 5%;
   }
-
+  
+  #newsletter{
+    display: block;
+    font-size: 2rem;
+    background: #031E45;
+    border-radius: 10px;
+  }
   #devblog{
     display: block;
     font-size: 2rem;
@@ -63,4 +69,5 @@ html {
     background: #031E45;
     border-radius: 10px;
   }
-  
+
+ 
