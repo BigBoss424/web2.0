@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": true
+            },
+            "previewLimit": 50,
+            "server": "db.bit.io",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "cogs-bitio",
+            "connectString": "postgresql://BigBoss424:v2_3vC6F_qgkJe3YSpVq2pntjNBRwxWF@db.bit.io/BigBoss424/cogs",
+            "database": "BigBoss424/cogs",
+            "username": "BigBoss424",
+            "password": "v2_3vC6F_qgkJe3YSpVq2pntjNBRwxWF"
+        }
+    ]
+}

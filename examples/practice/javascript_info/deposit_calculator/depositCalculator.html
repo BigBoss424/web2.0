@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="Deposit Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header>
+            <h1>Deposit Calculator</h1>
+        </header>
+        <div class="form">
+            <fieldset>Initial Deposit</fieldset>
+            <input type="number" name="initial" id="initial" value="10000">
+            <fieldset>How many months</fieldset>
+            <select name="months" id="months">
+                <option value="3">3 minimum</option>
+                <option value="6">6 (half year)</option>
+                <option value="12">One Year</option>
+                <option value="18">1 (1 and half years)</option>
+                <option value="24">24 (2 years)</option>
+                <option value="36">36 (3 years)</option>
+                <option value="60">60 (5 years)</option>
+            </select>
+            <fieldset>Interest per year?</fieldset>
+            <input type="number" name="interest" id="interest" value="5">
+        </div>
+        
+        <div class="result">
+            <table id="diagram">
+                <tr>
+                  <th>Was:</th>
+                  <th>Becomes:</th>
+                </tr>
+                <tr>
+                  <th id="money-before"></th>
+                  <th id="money-after"></th>
+                </tr>
+                <td>
+                  <div style="background: red;width:40px;height:100px"></div>
+                </td>
+                <td>
+                  <div style="background: green;width:40px;height:0" id="height-after"></div>
+                </td>
+              </table>
+            
+
+        </div>
+        <script src="depositcalculator.js" async defer></script>
+    </body>
+</html>

@@ -8,29 +8,47 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Contact Form</title>
-        <meta name="description" content="">
+        <meta name="description" content="contact form">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/public/src/css/contact_style.css">
+        <link rel="stylesheet" href="src/css/contact_style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+       <header>
+         <h2>Contact Form</h2>
+         <h3>Feel free to contact us!</h3>
+       </header>
         <div class="container">
-            <form id="contactForm" action="" method="post">
-              <h3>Quick Contact</h3>
-              <h4>Contact us today, and get reply with in 24 hours!</h4>
-               <div>
-                input                             
-                input                             
-            
-                input
-            
-                input
+            <form action="https://formspree.io/f/xzbwjwkr" method="post" id="contact-form">
 
+               <div class="mb-3">
+                 <label for="name" class="form-label">Name</label>
+                 <input type="text"
+                   class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="John Doe">
+                 <small id="helpId" class="form-text text-muted">Enter your Full Name</small>
                </div>
+
+               <div class="mb-3">
+                <label for="phonenumber" class="form-label">Phone Number</label>
+                <input type="tel"
+                  class="form-control" name="phone" id="phone" aria-describedby="helpId" placeholder="(xxx) xxx-xxxx" maxlength="14">
+                <small id="helpId" class="form-text text-muted">Enter your phone number</small>
+              </div>
+
+               <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+                <small id="emailHelpId" class="form-text text-muted">Enter a valid email</small>
+              </div>
+
+              <div class="mb-3">
+                 <label for="message" class="form-label">Message</label>
+                 <textarea class="form-control" name="message" id="message" rows="6"></textarea>
+              </div>
+              <button type="send" class="btn btn-primary">Send</button>
             </form>
-          </div>
+        </div>
         <script src="/public/src/js/contact.js" async defer></script>
     </body>
 </html>

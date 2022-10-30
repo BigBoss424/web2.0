@@ -1,8 +1,4 @@
-html{
-	background-color: rgb(148, 148, 206);
-}
-
-fieldset {
+h2{
 	text-align: center;
 }
 
@@ -12,7 +8,7 @@ h3 {
 
 }
 
-h4 {
-	text-align: center;
-
+button {
+	width: 100%;
 }
+
