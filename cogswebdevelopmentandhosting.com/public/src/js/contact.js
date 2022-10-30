@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,7 +10,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyC29BobzEnLrwa4eO_W-xbnw2qRoOiuOJE",
   authDomain: "awesome-highway-264200.firebaseapp.com",
-  databaseURL: "https://awesome-highway-264200-default-rtdb.firebaseio.com",
+  databaseURL: "https://awesome-highway-264200-default-rtdb.firebaseio.com/:contactForm",
   projectId: "awesome-highway-264200",
   storageBucket: "awesome-highway-264200.appspot.com",
   messagingSenderId: "897482776445",
@@ -21,30 +21,34 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+const database = getDatabase(app);
 //reference database
-var contactFormDB = firebase.database().ref("contactForm");
-document.getElementById('contactForm').addEventListener("submit", submitForm);
 
-function submitForm(e){
-    e.preventDefault();
-    
-    var name = getElementVal('name');
-    var emailid = getElementVal('emailid');
-    var msgContent = getElementVal('msgContent');
-    
-    saveMessages(name, emailid, msgContent);
+document.getElementById('contactForm').addEventListener("send", sendForm);
+
+function sendForm(e){
+  e.preventDefault();
+
+  var firstName = getInputVal('first-name');
+  var lastName = getInputVal('last-name');
+  var email = getInputVal('email');
+  var textfield = getInputVal('textfield');
+
+  console.log(firstName);
+  console.log
+
 }
 
-const saveMessages = (name, emailid, msgContent) => {
-    var newContactForm = contactFormDB.push();
-
-    newContactForm.set({
-        name: name,
-        emailid: emailid,
-        msgContent: msgContent,
-    });
+// function to get the form values
+function getInputVal(id){
+  return document.getElementById(id).value;
 }
-const getElementVal = (id) => {
-    return document.getElementById(id).value;
-};
+//gets the firstname
+var firstName = getInputVal('first-name');
+//gets the lastname
+var lastName = getInputVal()
+//gets the email
+//gets the message
+
+
+}
