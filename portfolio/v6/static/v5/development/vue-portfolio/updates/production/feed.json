@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Sidey",
+    "home_page_url": "/",
+    "feed_url": "/feed.json",
+    "description": "Simple and minimalistic jekyll blogging theme.",
+    "icon": "/apple-touch-icon.png",
+    "favicon": "/favicon.ico",
+    "expired": false,
+    
+    "author": "{"twitter"=>nil, "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil}",
+    
+"items": [
+    
+        {
+            "id": "/2020/03/27/welcome-to-my-blog",
+            "title": "Welcome to My Blog",
+            "summary": "My first post to the jPortfolio blog",
+            "content_text": "The first post of many.",
+            "content_html": "<p>The first post of many.</p>",
+            "url": "/2020/03/27/welcome-to-my-blog",
+            
+            
+            
+            "tags": ["jportfolio","coding"],
+            
+            "date_published": "2020-03-27T00:00:00-07:00",
+            "date_modified": "2020-03-27T00:00:00-07:00",
+            
+                "author": 
+                "{"twitter"=>nil, "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil}"
+                
+            
+        }
+    
+    ]
+}

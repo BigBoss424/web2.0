@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/about</loc>
+<lastmod>2020-03-27T06:50:04-07:00</lastmod>
+</url>
+<url>
+<loc>/search</loc>
+<lastmod>2020-03-27T06:50:04-07:00</lastmod>
+</url>
+<url>
+<loc>/2020/03/27/welcome-to-my-blog</loc>
+<lastmod>2020-03-27T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/tag/jportfolio/</loc>
+</url>
+<url>
+<loc>/tag/coding/</loc>
+</url>
+</urlset>

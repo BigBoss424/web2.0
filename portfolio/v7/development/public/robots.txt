@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jportfolio.tk/sitemap.xml
+Host: https://jportfolio.tk

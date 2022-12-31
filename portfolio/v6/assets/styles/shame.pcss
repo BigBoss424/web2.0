@@ -1,0 +1,49 @@
+@variants hover, group-hover {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+.transition-all-300 {
+  transition: all .3s;
+}
+
+/* Height fix for anchors */
+
+a[id] {
+  @apply .-mt-8 .pt-8;
+}
+
+
+/*
+ * Adapted from animate.css (https://github.com/daneden/animate.css/)
+ */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+
+@variants hover, group-hover {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
