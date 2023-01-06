@@ -34,6 +34,17 @@ app.get('/services', function(req, res){
     res.render('services');
 });
 
+app.get('/faqs', function (req, res){
+    res.render('faqs');
+});
+
+app.get('/features', function(req, res){
+    res.render('features');
+});
+
+app.get('/pricing', function(req, res){
+    res.render('pricing');
+});
 app.post('/contact/send', function(req, res){
     var transporter = nodemailer.createTransport({
         service: 'gmail', 
@@ -69,6 +80,7 @@ app.post('/contact/send', function(req, res){
         text: 'You have a website submission with the following details... Name: ' +
             req.body.name+'Email: '+req.body.email+'Message: '+req.body.message,
         html: '<p>You have a submission with the following details...</p><ul><li>'+req.body.name+'</li><li>Email: '+req.body.email+'<li><li>Message: '+req.body.message+'</li></ul>'
-    };
+    };//end contact 
+
 
 });

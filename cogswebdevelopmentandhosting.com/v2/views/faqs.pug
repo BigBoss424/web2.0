@@ -1,0 +1,35 @@
+extends layout.pug
+block content
+    h1 FAQS(Frequenty Asked Questions)
+        #accordionExample.accordion
+        .accordion-item
+            h2#headingOne.accordion-header
+                button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                | Where can I find updates about the site?
+            #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+      .accordion-body
+        | You can find updates for the site, by visiting the blog at: 
+        button.btn-primary
+          a(href='bigboss424.github.io/cogswebdevblog')
+          | Cogs Web Dev Blog
+  .accordion-item
+    h2#headingTwo.accordion-header
+      button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+        | How do you process payments?
+    #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+      .accordion-body
+        | Payments are processed by an invoice sent out by PayPal or SquaredUp. Until Stripe becomes integrated with the payment process.
+  .accordion-item
+    h2#headingThree.accordion-header
+      button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+        | What's the best means of communication?
+    #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+      .accordion-body
+        | The best means of communication comes from from contacting us via the contact page: 
+        button.btn-primary
+          a(href='/contact')
+          | Contact
+        | .
+
+    h1 FAQ (Frequenty Ask Questions)
+
