@@ -50,7 +50,7 @@ app.post('/contact/send', function(req, res){
         service: 'gmail', 
         auth: {
             user: 'rsaiyan4444@gmail.com',
-            pass: 'Efr4932!1'
+            pass: ''
         }
     });
 
