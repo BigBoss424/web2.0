@@ -2,30 +2,31 @@ extends layout.pug
 
 block content 
     h1 Services 
+    p Shown below is a brief list
     p 
         | Services that are offered here at Cogs Web Development and Hosting.
     #custom-cards.container.px-4.py-5
-        h2.pb-2.border-bottom Custom cards
+        h2.pb-2.border-bottom Web Development
         .row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5
             .col
                 .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-1.jpg');")
                     .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
-                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Short title, long jacket
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Static Website Development
                         ul.d-flex.list-unstyled.mt-auto
                             li.me-auto
                                 img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
                             li.d-flex.align-items-center.me-3
                                 svg.bi.me-2(width='1em' height='1em')
                                     use(xlink:href='#geo-fill')
-                                small Earth
+                                Static Sites
                             li.d-flex.align-items-center
                                 svg.bi.me-2(width='1em' height='1em')
-                                    use(xlink:href='#calendar3')
-                                small 3d
+                                    use(xlink:href='https://www.cogswebdevelopmentandhosting.com')
+                                small site
             .col
                 .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-2.jpg');")
                     .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
-                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Much longer title that wraps to multiple lines
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Static Site Hosting
                         ul.d-flex.list-unstyled.mt-auto
                             li.me-auto
                                 img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
@@ -40,7 +41,7 @@ block content
             .col
                 .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-3.jpg');")
                     .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1
-                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Another longer title belongs here
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Various Others
                         ul.d-flex.list-unstyled.mt-auto
                             li.me-auto
                                 img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
@@ -52,4 +53,99 @@ block content
                                 svg.bi.me-2(width='1em' height='1em')
                                     use(xlink:href='#calendar3')
                                 small 5d
-
+        #custom-cards.container.px-4.py-5
+        h2.pb-2.border-bottom IT Services
+        .row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-1.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Laptop Services
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small Earth
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 3d
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-2.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Desktop Services
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small Pakistan
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 4d
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-3.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Server Services
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small California
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 5d
+    #custom-cards.container.px-4.py-5
+        h2.pb-2.border-bottom Business Services
+        .row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-1.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold IRS Forms
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small Earth
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 3d
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-2.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Business Forms
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small Pakistan
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 4d
+            .col
+                .card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg(style="background-image: url('unsplash-photo-3.jpg');")
+                    .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1
+                        h3.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Financial Analysis via Jupyter Notebooks
+                        ul.d-flex.list-unstyled.mt-auto
+                            li.me-auto
+                                img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                            li.d-flex.align-items-center.me-3
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#geo-fill')
+                                small California
+                            li.d-flex.align-items-center
+                                svg.bi.me-2(width='1em' height='1em')
+                                    use(xlink:href='#calendar3')
+                                small 5d

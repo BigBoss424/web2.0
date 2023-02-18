@@ -5,7 +5,7 @@
       hour = min * 60,
       day = hour * 24;
   
-    const end = new Date("January 30, 2023 00:00:00").getTime();
+    const end = new Date("February 25, 2023 00:00:00");
   
     const int = setInterval(() => {
       const current = new Date().getTime();

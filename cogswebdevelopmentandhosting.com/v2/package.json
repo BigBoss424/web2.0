@@ -3,6 +3,7 @@
     "body-parser": "*",
     "bootstrap": "^5.3.0-alpha1",
     "express": "*",
+    "firebase-functions": "^4.2.1",
     "jquery": "^3.6.3",
     "nodemailer": "*",
     "pug": "*"

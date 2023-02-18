@@ -2,7 +2,7 @@ html {
     height: 100%;
     overflow: hidden;
   }
-  body {
+body {
     background: url("https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
     color: #fff;
     font-family: sans-serif;
@@ -45,18 +45,19 @@ html {
     display: block;
     font-size: 3rem;
   }
-  #buttons{
-    display: flex;
+
+#buttons{
+    display: grid;
     gap: 5%;
-  }
+}
   
-  #newsletter{
+  /*#newsletter{
     display: block;
     font-size: 2rem;
     background: #031E45;
     border-radius: 10px;
-  }
-  #devblog{
+  }*/
+#devblog{
     display: block;
     font-size: 2rem;
     background: #031E45;
@@ -64,7 +65,7 @@ html {
   }
 
   #contact{
-    display:block;
+    display: block;
     font-size: 2rem;
     background: #031E45;
     border-radius: 10px;
