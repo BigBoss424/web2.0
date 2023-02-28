@@ -21,7 +21,7 @@ const get = async (url) => {
 };
 
 module.exports = {
-  getRates: () => get(`/latest&symbols=${symbols}&base=EUR`),
+  getRates: () => get(`/latest&symbols=${symbols}&base=USD`),
   getSymbols: () => get('/symbols'),
-  getHistoricalRate: date => get(`/${date}&symbols=${symbols}&base=EUR`),
+  getHistoricalRate: date => get(`/${date}&symbols=${symbols}&base=USD`),
 };
