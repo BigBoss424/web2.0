@@ -9,8 +9,9 @@ exports.helloWorld = functions.https.onRequest((req, res) => {
                 <title>Test Function</title>
             </head>
             <body>
-                ${'Hello World'}
+                <p>Hello World</p>
             </body>
         </html>")
     )
+
 });

@@ -46,12 +46,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [{
-        "source": "/functions",
-        "function": "helloWorld",
-        "region": "nam5" 
-    }]
+    ]
   },
   "firestore": {
     "rules": "firestore.rules",
