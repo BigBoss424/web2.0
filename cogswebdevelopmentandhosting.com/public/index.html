@@ -1,66 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cogs Web Development and Hosting Launch Page</title>
-  <link rel="stylesheet" href="src/css/style.css">
-  <script async src="src/js/countdown.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QJPYREPMF"></script>
-  <script>
-     window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogs Web Development and HOsting</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="./components/navbar/navbar.css" />
+  <link rel="stylesheet" href="./components/sidebar/sidebar.css" />
+  <link rel="stylesheet" href="./styles.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
-    gtag('config', 'G-4QJPYREPMF');
-  </script>
-  <!-- End of Google Tag -->
+
+
 </head>
-<body>
-    <div id="countdown">
-        <h1>Coming Soon!</h1>
-        <p>The launch of the new website will be arriving soon. Stay updated with the development
-            of the website via the development blog or contact me.
-        </p>
-
-        <section id="buttons">
-          <button id="devblog"><a href="https://bigboss424.github.io/cogswebdevblog/">Development Blog</a></button>
-          <button id="contact"><a href="src/html/contactForm.html">Contact Me</a></button>
-        </section>
-
-        <section id="countdown">
-          <ul>
-            <li><span id="days"></span>Days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-          </ul>
-        </section>
-
-        <!-- Will insert a random quote generator here -->
-        <section id="quote">
-
-        </section>
-
-        <!-- This will be a RSS Feed from the Development Blog -->
-        <section id="updates">
-
-        </section>
-        
-        <hr>
-        <section id="footer">
-            <footer>
-                <li>
-                    <a href="https://bigboss424.github.io/cogswebdevblog">Development Blog</a>
-                    <a href="https://bigboss424.github.io/">Personal Blog</a>
-                    <a href=""></a>
-                </li>
-            </footer>
-        </section>
-
-
-    </div>
-  </body>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    Cogs Web Development and Hosting
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                </div>
+                <!-- links -->
+                <ul class="links">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./src/html/about.html">about</a>
+                    </li>
+                    <li>
+                        <a href="./src/html/projects.html">projects</a>
+                    </li>
+                    <li>
+                        <a href="./src/html/contact.html">contact</a>
+                    </li>
+                    <li>
+                        <a href="./src/html/tools.html">tools</a>
+                    </li>
+                    <li>
+                        <a href="http://bigboss424.github.io/cogswebdevblog">blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+       
+       <!-- Sections --> 
+            <!-- Welcome -->
+            <section class="section" id="welcome">
+                <div class="title">
+                    <h2>Welcome to Cogs Web Development and Hosting</h2>
+                </div>
+                <div class="container">
+                    <p>
+                        Cogs Web Development and Hosting is a work in progress as a small business. Learning how to build and develop websites, web applications and developing hosting solutions. Providing services such as laptop repair and desktop repair services to help reduce e-waste in and keep older technologies relevent and efficient utilizing open source softare and the Linux ecosystem.  
+                    </p>
+                </div>
+            </section>
+            <!-- Company Description -->
+            <section class="section" id="company_desc">
+                <div class="title">
+                    <h2>Company Description</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        As Cogs Web Development and Hosting continues development in it's technologies, it's goal is to help small businesses integrate with both the lastest technologies such as the blockchain, while utilizing older technologies in order to create efficiency and effect means of web marketing and management of digital and physical assets. 
+                    </p>
+                </div>
+            </section>
+            <!-- Comapny Resources -->
+            <section class="section" id="company_resources">
+                <div class="title">
+                    <h2>Company Resources</h2>
+                </div>
+                <p>
+                    Right now, the resources for the business can be located at <a href="./src/html/tools.html">Tools</a>. Development progress can be found at <a href="https://bigboss424.github.io/cogswebdevblog">Cogs Web Development Blog</a>.
+                </p>
+            </section>
+       <!-- Footer --> 
+       <footer>
+            <p id="footer">&copy Cogs Web Development and Hosting <span id="year"></span></p>
+                <ul id="footer_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./src/html/about.html">About</a></li>
+                    <li><a href="./src/html/projects.html">Projects</a></li>
+                    <li><a href="./src/html/contact.html">Contact</a></li>
+                    <li><a href="http://bigboss424.github.io/cogswebdevblog">Blog</a></li>
+                    <li><a href="./tools.html">Tools</a></li>
+                </ul>
+       </footer>
+    <!-- javascript -->
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/sidebar/sidebar.js"></script>
+    <script src="./components/parallax/parallax.js"></script>
+    <script src="./scripts.js"></script>
+    </body>
 </html>

@@ -1,0 +1,28 @@
+#welcome,
+#company_desc,
+#company_resources
+{
+    text-align: center;
+    
+}
+.content{
+    display: block;
+    
+}
+.form{
+    display: grid;
+}
+
+input{
+    gap: 50px;
+}
+
+#contact_form{
+    display: grid;
+}
+#footer{
+    text-align: center;
+}
+#footer_links{
+    text-align: center;
+}
