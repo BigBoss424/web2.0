@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: cogswebdevelopmentandhosting.com
+Token: 8ccf46766593b7eaa538012d064485dfe0b1e14d38a530e0c7ec35b8041ecb3f

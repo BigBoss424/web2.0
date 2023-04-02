@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cogs Web Development and Hosting</title>
   <!-- styles -->
+  <link rel="stylesheet" href="../css/contact.css">
   <link rel="stylesheet" href="../../components/navbar/navbar.css" />
   <link rel="stylesheet" href="../../components/sidebar/sidebar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
@@ -54,38 +55,80 @@
             <section class="section" id="intro">
                 <h2>Contact Information</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil amet optio, aut similique reprehenderit minus, quod in omnis deleniti voluptatum illum beatae voluptate quo laborum non, corrupti molestiae veritatis! Quis!
+                    Feel free to utilize the following form below and the contact information below to contact Cogs Web Development and Hosting. 
                 </p>
+
+                <ul>
+                    <li><i class="fa fa-road"></i> 1024 Random Rd</li>
+                    <li><i class="fa fa-phone"></i> +33 333 3333333</li>
+                    <li><i class="fa fa-envelope"></i> serious@email.com</li>
+                  </ul>
             </section>
+
+            <!-- Contact card -->
+            <section class="section" id="contact_info">
+                <div class="card" style="width:18rem;">
+                  <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Contact Information</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Cogs Web Development and Hosting</h6>
+                    <p class="card-text">
+                        email: ajones061392@cogswebdevelopmentandhosting.com
+                        phone number: <a href="tel:+1626"></a> 
+                        address: <a href="http://www.cogswebdevelopmentandhosting.com">Online</a>
+                        website: <a href="http://www.cogswebdevelopmentandhosting.com">Cogs Web Development and Hosting</a>
+                    </p>
+                    b5
+                  </div>
+                </div>
+
+
+
+
+
+            </section>
+            <!-- Map -->
+            <section class="section" id="map">
+
+            </section>
+
+    
             <!-- Contact Form -->
             <section class="section" id="contact_form">
                 <h2>Contact Form</h2>
                 <h3>Feel Free to Use the Contact Form Below</h3>
                 <div class="form">
-                <form action="">
+                <form id="contactForm" action="https://formspree.io/f/mnqygpoo"
+                method="POST">
                         <div class="name">
                         <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
                         </div>
-
+                        <div class="company">
+                        <input type="text" name="company" id="company" placeholder="Enter Your Companies Name">
+                        </div>
                         <div class="email">
-
-                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
                         </div>
-
                         <div class="phone">
-                        <input type="tel" name="phone" id="phone" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
-                        
                         <div class="message">
-                        <textarea name="" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                </form>  
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <div class="submitbtn">
+                            <button type="submit">Submit</button>
+                        </div>
+                        <div class="clearbtn">
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>  
                 </div>
             </section>
        <!-- Footer --> 
        <footer>
             <p>Cogs Web Development and Hosting</p>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../../index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -97,5 +140,6 @@
     <script src="./components/navbar/navbar.js"></script>
     <script src="./components/sidebar/sidebar.js"></script>
     <script src="./scripts.js"></script>
+    <script src="../js/contact.js"></script>
     </body>
 </html>

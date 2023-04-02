@@ -1,0 +1,53 @@
+.box:before,
+.box:after {
+content: "";
+height: 110px;
+width: 110px;
+border-radius: 50%;
+background: radial-gradient(
+circle,
+#fff0 22px,
+#c39f76 23px,
+#c39f76 44px,
+#fff0 45px
+),
+linear-gradient(60deg, #fff0 21%, #c39f76 21.1%, #c39f76 43.5%, #fff0 43.6%)
+0 0 / 100% 29% no-repeat,
+linear-gradient(60deg, #fff0 56%, #c39f76 56.1%, #c39f76 78.5%, #fff0 78.6%)
+0 100% / 100% 29% no-repeat,
+linear-gradient(
+-60deg,
+#fff0 21%,
+#c39f76 21.1%,
+#c39f76 43.5%,
+#fff0 43.6%
+)
+0 0 / 100% 28% no-repeat,
+linear-gradient(
+-60deg,
+#fff0 56%,
+#c39f76 56.1%,
+#c39f76 78.5%,
+#fff0 78.6%
+)
+0 100% / 100% 29% no-repeat,
+linear-gradient(90deg, #c39f76 15px, #fff0 15px, #fff0 90px, #c39f76 90px)
+50% 50% / 100% 25px no-repeat;
+transform: rotate(0deg);
+margin:-20px;
+animation: rotate 4.5s infinite alternate ease-in-out;
+}
+.box:before {
+margin-top:50px;
+}
+.box:after {
+margin-bottom: 51px;
+animation-delay: -4.5s;
+}
+@keyframes rotate {
+100% {
+transform: rotate(360deg);
+}
+}
+
+.box {overflow:hidden;}
